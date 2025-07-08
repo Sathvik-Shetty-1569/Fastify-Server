@@ -20,7 +20,6 @@ app.get('/hello/:name', (request, reply) => {
 
 
 const start = async () => {
-
   try {
   await connectDB(process.env.MONGO_URI);
   app.listen({port: 3000}, (err, address) => {
